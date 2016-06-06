@@ -68,6 +68,7 @@ def problem_027():
 """
 
 def problem_044():
+	#I dont remember what I am doing here. But I will figure out
 	mylist[]
 	n=1
 	sw=0
