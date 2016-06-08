@@ -67,18 +67,42 @@ def problem_027():
 	return max
 """
 
-def problem_044():
-	#I dont remember what I am doing here. But I will figure out
-	mylist[]
-	n=1
-	sw=0
-	while sw=0:
-		P=(n*(3*n-1))/2
-		mylist.append(P)
-		if n==10:
-			sw=1
-		n+=1
-	print (mylist)
+"""
+#def problem_044():
+mylist = []
+n=1
+a =0
+while a == 0:
+	P = n*(n+1) 
+	#(n*(3*n-1))/2
+	mylist.append(P)
+	if n==10:
+		a=1
+	n+=1
+print (mylist)
+"""
+
+#def problem_045():
+mylistP = []
+mylistT = []
+mylistH = []
+n=1
+a =0
+while a == 0:
+	P = n*(3*n-1)/2 
+	T = n*(n+1)/2
+	H = n*(2*n-1)
+	
+	mylistP.append(P)
+	mylistT.append(T)
+	mylistH.append(H)
+	
+	if n==20:
+		a=1
+	n+=1
+print (mylistP)
+print (mylistT)
+print (mylistH)
 
 
 
