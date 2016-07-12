@@ -15,4 +15,6 @@ def prime (number):
 				#print (number, "primo")
 					return True
 			j = j+1
+			
+#convert a number from base 10 to binary
 		

@@ -5,14 +5,23 @@
 #include "TStyle.h"
 
 
+void P001()
+{
+	TF1 f1("f1","sin(x)/x",0,10);
+	f1.Draw("P");
+}
+
+
+
+
 
 void graphing()
 {
-	Int_t n = 20;
-	Double_t X[n], Y[n], Z[n], W[n];
+	int n = 20;
+	double X[n], Y[n], Z[n], W[n];
 
 	// create a blue graph with a cos function and red one with sin function
-	for (Int_t i=0; i<n; i++) 
+	for (int i=0; i<n; i++) 
 	{
 		X[i] = i;
 		Y[i] = cos(i);
@@ -48,7 +57,6 @@ void graphing()
 	leg->AddEntry(gr3, "sin(x)", "L");
 	leg->Draw();
 }
-
 
 
 void Prenctest()

@@ -3,7 +3,7 @@ import math
 import funciones
 
 
-def problem_001():
+def p001():
 	ans1 =0
 	for i in range(1, 1000):
 		x1 = i % 3
@@ -12,9 +12,9 @@ def problem_001():
 		else :		
 			if y1 == 0:
 				ans1 = ans1 + i
-	return ans1
+	print (ans1)
 
-def problem_002():
+def p002():
 	sw = 1
 	ii = 1
 	ans2  =2
@@ -29,7 +29,7 @@ def problem_002():
 		else : sw =0
 	return ans2
 
-def problem_003():
+def p003():
 	ans3 = 6857
 	'''y3 = 3
 	x3 = 600851475143
@@ -48,7 +48,7 @@ def problem_003():
 			y3 = y3 + 1'''
 	return ans3
 
-def problem_004():
+def p004():
 	y4 = 2
 	ans4 =1
 	for x in range(1, 1000):
@@ -79,7 +79,7 @@ def problem_004():
 								ans4 = z 
 	return ans4
 
-def problem_005():
+def p005():
 	x5 = 30
 	sw = 1
 	while sw == 1:
@@ -101,7 +101,7 @@ def problem_005():
 					i5= i5 + 1
 	return x5
 
-def problem_006():
+def p006():
 	x6 = 0
 	y6 = 0
 	for i6 in range (1, 101):
@@ -111,7 +111,7 @@ def problem_006():
 	ans6 = y6 -x6
 	return ans6
 
-def problem_007():
+def p007():
 	sw=1
 	x=2
 	y =3
@@ -127,7 +127,7 @@ def problem_007():
 			y= y + 2
 	return y
 
-def problem_008():
+def p008():
 	a8=[7,3,1,6,7,1,7,6,5,3,1,3,3,0,6,2,4,9,1,9,2,2,5,1,1,9,6,7,4,4,2,6,5,7,4,7,4,2,3,5,5,3,4,9,1,9,4,9,3,4,9,6,9,8,3,5,2,0,3,1,2,7,7,4,5,0,6,3,2,6,2,3,9,5,7,8,3,1,8,0,1,6,9,8,4,8,0,1,8,6,9,4,7,8]
 	b8=[8,5,1,8,4,3,8,5,8,6,1,5,6,0,7,8,9,1,1,2,9,4,9,4,9,5,4,5,9,5,0,1,7,3,7,9,5,8,3,3,1,9,5,2,8,5,3,2,0,8,8,0,5,5,1,1,1,2,5,4,0,6,9,8,7,4,7,1,5,8,5,2,3,8,6,3,0,5,0,7,1,5,6,9,3,2,9,0,9,6,3,2,9,5]
 	c8=[2,2,7,4,4,3,0,4,3,5,5,7,6,6,8,9,6,6,4,8,9,5,0,4,4,5,2,4,4,5,2,3,1,6,1,7,3,1,8,5,6,4,0,3,0,9,8,7,1,1,1,2,1,7,2,2,3,8,3,1,1,3,6,2,2,2,9,8,9,3,4,2,3,3,8,0,3,0,8,1,3,5,3,3,6,2,7,6,6,1,4,2,8,2]
@@ -150,7 +150,7 @@ def problem_008():
 			ans8 = z8
 	return ans8
 
-def problem_009():
+def p009():
 	for i in range (1,400):
 		for j in range (1,1000-i):
 			k = 1000 - i - j
@@ -160,7 +160,7 @@ def problem_009():
 				ans = i*j*k
 	return ans
 
-def problem_010():
+def p010():
 	ans = 17
 	for x in range (8, 2000000):
 		y = funciones.prime(x)
@@ -168,7 +168,7 @@ def problem_010():
 			ans = ans +x
 	return ans
 
-def problem_012():
+def p012():
 	i=3
 	k = 2
 	sw =1
@@ -187,7 +187,7 @@ def problem_012():
 				sw=0
 	return answer
 
-def problem_013():
+def p013():
 	a= 37107287533902102798797998220837590246510135740250
 	b= 46376937677490009712648124896970078050417018260538
 	c= 74324986199524741059474233309513058123726617309629
@@ -295,7 +295,7 @@ def problem_013():
 	lis = str(todo)
 	return todo
 
-def problem_014():
+def p014():
 	j = 5
 	ele = 1
 	num =1
@@ -319,7 +319,7 @@ def problem_014():
 		j = j+1
 	return num	
 
-def problem_016():
+def p016():
 	sum =0
 	x=2**1000
 	lis = str(x)
@@ -329,11 +329,11 @@ def problem_016():
 		sum = sum +z
 	return sum
 
-def problem_019():
+def p019():
 	answer = 171
 	return 171
 
-def problem_020():
+def p020():
 	sum =0
 	number = 100
 	x =1
@@ -346,7 +346,7 @@ def problem_020():
 		sum = sum +z
 	return sum
 
-def problem_021():
+def p021():
 	total =0
 	for i in range (1, 10000):
 		count = 0
@@ -365,7 +365,7 @@ def problem_021():
 				#print(i,count) 
 	return total
 
-def problem_024():
+def p024():
 	x = 1
 	for i in range (0,10):
 		for j in range (0,10):
@@ -392,7 +392,7 @@ def problem_024():
 	return y
 
 
-def problem_025():
+def p025():
 	sw = 1
 	ii = 1
 	answer  =2
@@ -410,7 +410,7 @@ def problem_025():
 			sw=0
 
 
-def problem_029():##remove repeated items
+def p029():##remove repeated items
 	mylist=[]
 	for a in range(2,101):
 		for b in range (2,101):
@@ -432,7 +432,7 @@ def problem_029():##remove repeated items
 	return todo
 
 
-def problem_030():
+def p030():
 	sw=1
 	i=10
 	result = 0
@@ -449,7 +449,7 @@ def problem_030():
 	return result
 
 
-def problem_034():
+def p034():
 	i=10
 	sw=1
 	count = 0
@@ -471,7 +471,7 @@ def problem_034():
 	return answer
 
 
-def problem_039():
+def p039():
 	answer = 0
 	for p in range (1,1000):
 		count =0
@@ -486,12 +486,38 @@ def problem_039():
 			answer= p
 	return answer
 
-
-def problem_044():
+def p044():
+	print("la mia")
 	
+def problem_045():
+	mylistP = []
+	mylistT = []
+	mylistH = []
+	n= 142
+	a = 0
+	while a == 0:
+		P = n*(3*n-1)//2 
+		T = n*(n+1)//2
+		H = n*(2*n-1)
+	
+		mylistP.append(P)
+		mylistT.append(T)
+		mylistH.append(H)
+		for i in range (0,len(mylistH)):
+			if (mylistP[i]==mylistT[i]):
+				print (mylistP[i])
+		if n==286:
+			a=1
+		n+=1
+#print (mylistP)
+#print (mylistT)
+#print (mylistH)
+#x = len(mylistP)
+#print (x)
+
 
 #This program is working really well
-
+"""
 def separation():
 	print ("esta es la separation")
 
@@ -502,3 +528,4 @@ def main ():
 	print ("	")
 
 main()
+"""

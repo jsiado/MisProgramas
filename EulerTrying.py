@@ -82,29 +82,15 @@ while a == 0:
 print (mylist)
 """
 
-#def problem_045():
-mylistP = []
-mylistT = []
-mylistH = []
-n=1
-a =0
-while a == 0:
-	P = n*(3*n-1)/2 
-	T = n*(n+1)/2
-	H = n*(2*n-1)
-	
-	mylistP.append(P)
-	mylistT.append(T)
-	mylistH.append(H)
-	
-	if n==20:
-		a=1
-	n+=1
-print (mylistP)
-print (mylistT)
-print (mylistH)
+#"""
 
 
+
+"""
+#convert to binary
+n= input (" : give a number")
+print (n)
+"""
 
 
 
