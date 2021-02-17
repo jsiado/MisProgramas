@@ -4,3 +4,5 @@
 *.jpg
 *.JPG
 *.root
+*.sh
+*.pyc
