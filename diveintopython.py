@@ -27,3 +27,64 @@ if __name__ == '__main__':
 ** power of
 % returns the residue
 '''
+
+
+import fractions
+import math
+
+
+y=math.pi
+z=math.sin(math.pi)
+x=fractions.Fraction(1,3)
+print(x,y,z)
+
+username = 'mark'
+password = 'PapayaWhip'
+a="{0}'s password is {1}".format(username, password)
+'''{0} and {1} are called positional indices and are replaced by arguments of the format '''
+print (a)
+#from diveintopython import approximate_size
+#print()
+#si=SUFFIXES
+#print(si)
+
+#creates empty:
+
+ylist= []       #creating an empty list
+tup=()          #cretaes an empty tuple
+a_set = set()   #creates an empty set
+mydic={}        # creates an empty dictionary
+
+
+mylist=['a','b','c']
+print (mylist)
+for i in range (0,9):
+	ylist.append(i)
+print (ylist)
+
+a_tuple = ("a", "b", "mpilgrim", "z", "example")
+print (a_tuple)
+
+a_set = {1, 2}
+print(a_set)
+
+a_dict = {'server': 'db.diveintopython3.org', 'database': 'mysql'}
+print(a_dict)
+
+
+a_list = [1, 9, 8, 4]
+lt =[elem *2 for elem in a_list]
+print (a_list)
+print (lt)
+
+
+
+
+
+
+
+
+
+
+
+

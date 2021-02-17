@@ -1,9 +1,13 @@
 import random
 import math
-import funciones
+import MyFunctions
+from decimal import *
+from itertools import permutations
 
+#use it as python -c 'import Comp_Phys; print Comp_Phys.function_name()'
+#All this problem has been solved and they run without problems
 
-def p001():
+def Prob_1():
 	ans1 =0
 	for i in range(1, 1000):
 		x1 = i % 3
@@ -12,9 +16,9 @@ def p001():
 		else :		
 			if y1 == 0:
 				ans1 = ans1 + i
-	print (ans1)
+	return (ans1)
 
-def p002():
+def Prob_2():
 	sw = 1
 	ii = 1
 	ans2  =2
@@ -29,7 +33,7 @@ def p002():
 		else : sw =0
 	return ans2
 
-def p003():
+def Prob_3():
 	ans3 = 6857
 	'''y3 = 3
 	x3 = 600851475143
@@ -37,7 +41,7 @@ def p003():
 	while y3 <  x3:
 		z3 = x3 % y3
 		if z3 ==0:
-			w3 = funciones.prime(y3)
+			w3 = MyFunctions.Prime(y3)
 			if w3 ==1:
 				print(y3," este es")
 				y3= y3 + 1
@@ -48,7 +52,7 @@ def p003():
 			y3 = y3 + 1'''
 	return ans3
 
-def p004():
+def Prob_4():
 	y4 = 2
 	ans4 =1
 	for x in range(1, 1000):
@@ -79,7 +83,7 @@ def p004():
 								ans4 = z 
 	return ans4
 
-def p005():
+def Prob_5():
 	x5 = 30
 	sw = 1
 	while sw == 1:
@@ -101,7 +105,7 @@ def p005():
 					i5= i5 + 1
 	return x5
 
-def p006():
+def Prob_6():
 	x6 = 0
 	y6 = 0
 	for i6 in range (1, 101):
@@ -111,13 +115,13 @@ def p006():
 	ans6 = y6 -x6
 	return ans6
 
-def p007():
+def Prob_7():
 	sw=1
 	x=2
 	y =3
 	while sw==1:
-		num = funciones.prime(y)
-		if num == 1:
+		isPrime = MyFunctions.Prime(y)
+		if isPrime == 1:
 			if x==10001:
 				sw =0
 			else:
@@ -127,7 +131,7 @@ def p007():
 			y= y + 2
 	return y
 
-def p008():
+def Prob_8():
 	a8=[7,3,1,6,7,1,7,6,5,3,1,3,3,0,6,2,4,9,1,9,2,2,5,1,1,9,6,7,4,4,2,6,5,7,4,7,4,2,3,5,5,3,4,9,1,9,4,9,3,4,9,6,9,8,3,5,2,0,3,1,2,7,7,4,5,0,6,3,2,6,2,3,9,5,7,8,3,1,8,0,1,6,9,8,4,8,0,1,8,6,9,4,7,8]
 	b8=[8,5,1,8,4,3,8,5,8,6,1,5,6,0,7,8,9,1,1,2,9,4,9,4,9,5,4,5,9,5,0,1,7,3,7,9,5,8,3,3,1,9,5,2,8,5,3,2,0,8,8,0,5,5,1,1,1,2,5,4,0,6,9,8,7,4,7,1,5,8,5,2,3,8,6,3,0,5,0,7,1,5,6,9,3,2,9,0,9,6,3,2,9,5]
 	c8=[2,2,7,4,4,3,0,4,3,5,5,7,6,6,8,9,6,6,4,8,9,5,0,4,4,5,2,4,4,5,2,3,1,6,1,7,3,1,8,5,6,4,0,3,0,9,8,7,1,1,1,2,1,7,2,2,3,8,3,1,1,3,6,2,2,2,9,8,9,3,4,2,3,3,8,0,3,0,8,1,3,5,3,3,6,2,7,6,6,1,4,2,8,2]
@@ -150,7 +154,7 @@ def p008():
 			ans8 = z8
 	return ans8
 
-def p009():
+def Prob_9():
 	for i in range (1,400):
 		for j in range (1,1000-i):
 			k = 1000 - i - j
@@ -160,16 +164,19 @@ def p009():
 				ans = i*j*k
 	return ans
 
-def p010():
+def Prob_10():
 	ans = 17
 	for x in range (8, 2000000):
-		y = funciones.prime(x)
-		if y == 1:
+		isPrime = MyFunctions.Prime(x)
+		if isPrime == 1:
 			ans = ans +x
 	return ans
 
-def p012():
-	i=3
+def Prob_11():
+	return ""
+
+def Prob_12():
+	i = 3
 	k = 2
 	sw =1
 	answer =0
@@ -187,7 +194,7 @@ def p012():
 				sw=0
 	return answer
 
-def p013():
+def Prob_13():
 	a= 37107287533902102798797998220837590246510135740250
 	b= 46376937677490009712648124896970078050417018260538
 	c= 74324986199524741059474233309513058123726617309629
@@ -295,7 +302,7 @@ def p013():
 	lis = str(todo)
 	return todo
 
-def p014():
+def Prob_14():
 	j = 5
 	ele = 1
 	num =1
@@ -319,7 +326,10 @@ def p014():
 		j = j+1
 	return num	
 
-def p016():
+def Prob_15():
+	return " "
+
+def Prob_16():
 	sum =0
 	x=2**1000
 	lis = str(x)
@@ -329,11 +339,17 @@ def p016():
 		sum = sum +z
 	return sum
 
-def p019():
+def Prob_17():
+	return " "
+
+def Prob_18():
+	return " "
+
+def Prob_19():
 	answer = 171
 	return 171
 
-def p020():
+def Prob_20():
 	sum =0
 	number = 100
 	x =1
@@ -346,7 +362,7 @@ def p020():
 		sum = sum +z
 	return sum
 
-def p021():
+def Prob_21():
 	total =0
 	for i in range (1, 10000):
 		count = 0
@@ -365,7 +381,17 @@ def p021():
 				#print(i,count) 
 	return total
 
-def p024():
+def Prob_22():
+	print("-----------------------sin resolver")
+	return " "
+
+def Prob_23():
+	print("-------------------------sin resolver")
+	return " "
+
+
+
+def Prob_24():
 	x = 1
 	for i in range (0,10):
 		for j in range (0,10):
@@ -391,8 +417,7 @@ def p024():
 																					x += 1
 	return y
 
-
-def p025():
+def Prob_25():
 	sw = 1
 	ii = 1
 	answer  =2
@@ -409,8 +434,19 @@ def p025():
 			return count
 			sw=0
 
+def Prob_26():
+	print("----------------sin resolver")
+	return " "
 
-def p029():##remove repeated items
+def Prob_27():
+	print("-----------------------------sin resolver")
+	return " "
+
+def Prob_28():
+	print("-----------------------------sin resolver")
+	return " "
+
+def Prob_29():##remove repeated items
 	mylist=[]
 	for a in range(2,101):
 		for b in range (2,101):
@@ -431,8 +467,7 @@ def p029():##remove repeated items
 		i+=1
 	return todo
 
-
-def p030():
+def Prob_30():
 	sw=1
 	i=10
 	result = 0
@@ -448,8 +483,19 @@ def p030():
 		i+=1
 	return result
 
+def Prob_31():
+	print("----------------sin resolver")
+	return " "
 
-def p034():
+def Prob_32():
+	print("-----------------------------sin resolver")
+	return " "
+
+def Prob_33():
+	print("-----------------------------sin resolver")
+	return " "
+
+def Prob_34():
 	i=10
 	sw=1
 	count = 0
@@ -470,8 +516,49 @@ def p034():
 		else: i +=1
 	return answer
 
+def Prob_35():
+	print("-----------------------------sin resolver")
+	return " "
 
-def p039():
+def Prob_36(n):
+	count = 1
+	for i in range(2,n):
+		intnum = str(i)
+		revint = intnum[::-1]
+		binform = bin(i)[2:].zfill(1)
+		numberbin= str(binform)
+		revbin = numberbin[::-1]
+		if intnum == revint and numberbin == revbin:
+			count+= i
+	return count
+
+def Prob_37(n):
+	MyFile = open("prob_37.txt","w") 
+	for i in range (11,n):
+		isPrime = MyFunctions.Prime(i)
+		if number == 1:
+			values = list(str(i))
+			#if str(4) not in values:
+				#if str(6) not in values:
+						#if str(8) not in values:
+								#print(i," ",values)
+			MyFile.write(str(i))
+			print(i)
+			MyFile.write("\n")
+			#values = list(str(i))
+			#print (values)
+			#for value in values:
+				#if 4,6,8,9
+			#x = str(i)
+			#print (x)
+			#while(len(x)>=	1):
+	return " "
+
+def Prob_38():
+	print("-----------------------------sin resolver")
+	return " "
+
+def Prob_39():
 	answer = 0
 	for p in range (1,1000):
 		count =0
@@ -486,46 +573,9 @@ def p039():
 			answer= p
 	return answer
 
-def p044():
-	print("la mia")
-	
-def problem_045():
-	mylistP = []
-	mylistT = []
-	mylistH = []
-	n= 142
-	a = 0
-	while a == 0:
-		P = n*(3*n-1)//2 
-		T = n*(n+1)//2
-		H = n*(2*n-1)
-	
-		mylistP.append(P)
-		mylistT.append(T)
-		mylistH.append(H)
-		for i in range (0,len(mylistH)):
-			if (mylistP[i]==mylistT[i]):
-				print (mylistP[i])
-		if n==286:
-			a=1
-		n+=1
-#print (mylistP)
-#print (mylistT)
-#print (mylistH)
-#x = len(mylistP)
-#print (x)
-
-
-#This program is working really well
-"""
-def separation():
-	print ("esta es la separation")
-
-## main function to run all problems
-def main ():
-	print ("	")
-	print ("	The solution for problem 39 is " ,problem_029())
-	print ("	")
-
-main()
-"""
+def Prob_40():
+	x = str(0)
+	for n in range (1,1000001):
+		x= x + str(n)
+	num = map(int,x)
+	return (int(num[1])*int(num[10])*int(num[100])*int(num[1000])*int(num[10000])*int(num[100000])*int(num[1000000]))

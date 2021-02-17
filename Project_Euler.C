@@ -15,6 +15,11 @@
 using namespace std;
 
 
+//run in root as
+//$ root -l
+//$ program_name (Project_Euler)
+//$ function_name (One(), Two(), etc)
+
 //Find the sum of all the multiples of 3 or 5 below 1000.
 void One()
 {
@@ -43,22 +48,18 @@ void Two()
 	for(i=2;i<=n;i++)
 	{
 		A[i]=A[i-1]+A[i-2];
-		if(A[i]>4000000)
-		{
+		if(A[i]>4000000){
 			j=i;
 			i=n;
 		}
 	}
-	for(i=0;i<=j;i++)
-	{
+	for(i=0;i<=j;i++){
 		cout<<"A["<<i<<"]= "<<A[i]<<endl;
 	}
-	for(i=0;i<=j;i++)
-	{
+	for(i=0;i<=j;i++){
 		div_t a;
 		diva = div(A[i],2);
-		if(diva.rem==0) 
-		{
+		if(diva.rem==0){
 			sum=sum+A[i];
 			cout<<A[i]<<"	"<<sum<<endl;
 		}

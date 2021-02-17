@@ -11,15 +11,9 @@ void getbincontent ()
 	cout<<"cuantos histogramas son......:";cin>>x;
 	for( a=1; a<=x+1; a++)
 	{
-		if (a==1)
-		{
-			cout<<"escribe el limite inicial del primer histograma.....:";cin>>A[a];
-		}
+	  if (a==1){cout<<"escribe el limite inicial del primer histograma.....:";cin>>A[a];}
 		else
-		if (a==2)
-		{
-			cout<<"escribe el limite final del primer histograma.....:";cin>>A[a];
-		}
+		if (a==2){cout<<"escribe el limite final del primer histograma.....:";cin>>A[a];}
 		else
 		{
 			cout<<"escribe el limite final del siguiente histograma.....:";cin>>A[a];
@@ -30,7 +24,6 @@ void getbincontent ()
 		n=0;
 		for( i=A[y]; i<=A[y+1]; i++)
 		{
-			
 			double j = h->GetBinContent(i);
 			n=n+j;
 		}

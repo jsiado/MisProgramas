@@ -235,12 +235,6 @@ void yoyiyu()
 	HV->Fit("fitProbe","R");
 }
 
-void Unified(int i)
-{
-	
-}
-
-
 
 //calculate whether a number is prime
 int Prime(int i)
@@ -282,6 +276,8 @@ void Sum_no5()
 	}
 	cout<<sum<<endl;
 }
+
+
 
 //Calculate the center of mass of a system of particle
 void CenterofMass()
