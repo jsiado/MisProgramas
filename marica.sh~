@@ -1,3 +1,0 @@
-#!/bin/bash
-
-python -c 'import AllFuntions; print Adoctorado/MisProgramas/AllFuntions.marica()'
